@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marriage Proposal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #noButton:hover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <h1>Will you marry me?</h1>
+  <button id="yesButton">Yes</button>
+  <button id="noButton">No</button>
+
+  <script>
+    document.getElementById('yesButton').addEventListener('click', function() {
+      alert('I love You So much Cutie ❤');
+    });
+
+    document.getElementById('noButton').addEventListener('mouseover', function() {
+      this.style.position = 'absolute';
+      let x = Math.random() * window.innerWidth;
+      let y = Math.random() * window.innerHeight;
+      this.style.left = x + 'px';
+      this.style.top = y + 'px';
+    });
+  </script>
+</body>
+</html>
